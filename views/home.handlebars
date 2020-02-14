@@ -1,0 +1,15 @@
+<h1>Welcome to Meadowlark Travel</h1>
+<script>
+(function(){
+    function success(data) {
+        console.log(data)
+    }
+    $.ajax({
+        type: "POST",
+        url: 'process-contact',
+        data: {name: "ana", email: "ana@go.com"},
+        success: success
+        //dataType: JSON
+    });
+})()
+</script>
